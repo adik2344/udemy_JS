@@ -12,15 +12,15 @@ console.log('mass of John ' +  massJohn );
 console.log('height of Mark ' +  heightMark );
 console.log('height of John ' +  heightJohn );
 
-var bmiMark = massMark / heightMark^2;
-var bmiJohn = massJohn / heightJohn^2;
+var bmiMark = massMark / (heightMark * heightMark);
+var bmiJohn = massJohn / (heightJohn * heightJohn);
 
 console.log('Mark has BMI - ' + bmiMark);
 console.log('John has BMI - ' + bmiJohn);
 
 if (bmiJohn > bmiMark){
-    console.log('Jonh has bmi more than Mark');
+    alert('Jonh has bmi more than Mark');
 }else{
 
-    console.log('Mark has bmi more than John');
+    alert('Mark has bmi more than John');
 }
