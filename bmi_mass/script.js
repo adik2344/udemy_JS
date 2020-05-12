@@ -47,23 +47,30 @@ GOOD LUCK 😀
 */
 
 var John = (101 + 120 + 103) / 3;
-var Mike = (116 + 94 + 123) / 3;
-var Mary = (89 + 134 + 98) / 3;
+var Mike = (110 + 90 + 123) / 3;
+var Mary = (90 + 134 + 98) / 3;
 
-if ( John > Mike ){
-    if (John > Mary) {
-        console.log('Jhon team is best with av. score ' + John);
-        console.log('Mike - ' + Mike + '\nMary - ' + Mary);
-    }else{
-        console.log('Mary"s team is best with av. score ' + Mary);
-        console.log('Mike - ' + Mike + '\nJohn - ' + John);
-    }
-}else if(Mike > Mary){
-    console.log('Mike"s team is best with av. score ' + Mike);
+if ( John > Mike && John > Mary){
+    console.log('Jhon\'s team is best with av. score ' + John);
+    console.log('Mike - ' + Mike + '\nMary - ' + Mary);
+    }else if (Mike > John && Mike > Mary){
+    console.log('Mike\'s team is best with av. score ' + Mike);
     console.log('John - ' + John + '\nMary - ' + Mary);
-}else{
-    console.log('Mary"s team is best with av. score ' + Mary);
+    }else if(Mary > John && Mary > Mike){
+    console.log('Mary\'s team is best with av. score ' + Mary);
     console.log('Mike - ' + Mike + '\nJohn - ' + John);
+    }else if (Mary == John){
+    console.log('It\'s draw between\n ' + 'Mary - ' + Mary + 
+    '\nJohn - ' + John);
+    }else if (Mary == Mike){
+    console.log('It\'s draw between\n ' + 'Mary - ' + Mary + 
+    '\nMike - ' + Mike);
+    }else if(John == Mike){
+    console.log('It\'s draw between\n ' + 'John - ' + John + 
+    '\nMike - ' + Mike);
+    }else {
+    console.log('It\'s draw between all teams\n ' + 'Mary - ' + Mary + 
+    '\nMike - ' + Mike + '\nJohn - ' + John);
 }
 
 /* -------------------------------------------------------------- */
