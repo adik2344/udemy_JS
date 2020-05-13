@@ -45,7 +45,7 @@ can't solve this one, just watch the solution, it's no problem :)
 
 GOOD LUCK 😀
 */
-
+/* 
 var John = (101 + 120 + 103) / 3;
 var Mike = (110 + 90 + 123) / 3;
 var Mary = (90 + 134 + 98) / 3;
@@ -72,5 +72,75 @@ if ( John > Mike && John > Mary){
     console.log('It\'s draw between all teams\n ' + 'Mary - ' + Mary + 
     '\nMike - ' + Mike + '\nJohn - ' + John);
 }
-
+ */
 /* -------------------------------------------------------------- */
+
+/*
+John and his family went on a holiday and went to 3 different 
+restaurants. The bills were $124, $48 and $268.
+
+
+To tip the waiter a fair amount, John created a simple tip 
+calculator (as a function). He likes to tip 20% of the bill when the
+ bill is less than $50, 15% when the bill is between $50 and $200, 
+ and 10% if the bill is more than $200.
+
+In the end, John would like to have 2 arrays:
+1) Containing all three tips (one for each bill)
+2) Containing all three final paid amounts (bill + tip).
+
+(NOTE: To calculate 20% of a value, simply multiply it with 20/100 = 0.2)
+
+GOOD LUCK 😀
+*/
+
+var billArr = [124,48,268];
+console.log(billArr);
+var tipArr =[0.2,.15,.1];
+
+var tip;
+
+function tipCalc(tip) {
+    
+    var 
+    switch (tip) {
+        case tip > 50:
+            
+            break;
+    
+        default:
+            break;
+    }
+
+}
+
+
+
+
+for (i=0; i<billArr[i].length; i++){
+    switch (billArr) {
+        case billArr[i] < 50 :
+        tipArr[i] = billArr[i] * 0.2;
+        console.log(tipArr);
+        console.log(billArr[i]);
+        break;
+        case billArr[i] < 200 :
+        tipArr[i] = billArr[i] * 0.15;
+        console.log(tipArr);
+        console.log(billArr[i]);
+        break;
+        case billArr[i] > 200 :
+        tipArr[i] = billArr[i] * 0.1;
+        console.log(billArr[i]);
+        break;
+        default:
+            break;
+    } 
+    
+var calcTip = function(billArr,tipArr) {
+    
+    
+} 
+} 
+console.log(calcTip(0,0));
+console.log(tipArr);
