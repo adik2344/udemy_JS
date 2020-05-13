@@ -93,15 +93,14 @@ In the end, John would like to have 2 arrays:
 
 GOOD LUCK 😀
 */
-
+/* 
 var billArr = [124,48,268];
-console.log(billArr);
 var tipArr =[0.2,.15,.1];
 
 var tip;
 
 function tipCalc(tip) {
-    
+
     var 
     switch (tip) {
         case tip > 50:
@@ -117,7 +116,7 @@ function tipCalc(tip) {
 
 
 
-for (i=0; i<billArr[i].length; i++){
+for (var i=0; i<billArr.length; i++){
     switch (billArr) {
         case billArr[i] < 50 :
         tipArr[i] = billArr[i] * 0.2;
@@ -143,4 +142,37 @@ var calcTip = function(billArr,tipArr) {
 } 
 } 
 console.log(calcTip(0,0));
-console.log(tipArr);
+console.log(tipArr); */
+/* -------------------------------------------------------------- */
+/* 
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 70,
+    height: 1.78,
+    indexbmi: function () {
+          return  this.mass / (this.height * this.height);   
+    }
+}
+var mark = {
+    firstName: 'Mark',
+    lastName: 'Green',
+    mass: 65,
+    height: 1.8,
+    indexbmi: function () {
+           return this.mass / (this.height * this.height);   
+    }
+}
+john.indexbmi();
+mark.indexbmi();
+console.log(john.firstName +' ' + john.lastName + ' has BMI - ' + john.indexbmi());
+console.log(mark.firstName +' ' + mark.lastName + ' has BMI - ' + mark.indexbmi());
+if (john.indexbmi() > mark.indexbmi()){
+    console.log('Jonh has bmi more than Mark');
+}else if(john.indexbmi() < mark.indexbmi()){
+
+    console.log('Mark has bmi more than John');
+}else {console.log('Bmi is draw');}
+ */
+/* -------------------------------------------------------------- */
+
